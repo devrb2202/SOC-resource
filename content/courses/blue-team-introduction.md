@@ -3,14 +3,15 @@ title: Blue Team Introduction
 description: Start your defensive security career...
 ---
 
-[← Back to Courses](/courses)  
+<!-- [← Back to Courses](/courses)   -->
 [← Home](/)
 
-# Blue Team Introduction
+# Email & Phishing Analysis
 
-Welcome to Blue Team 🛡️
+This module focuses on identifying, analyzing, and responding to phishing attacks and malicious email campaigns commonly encountered in Security Operations Centers (SOC). 🛡️
 
-## What you will learn
-- SOC fundamentals
-- Defensive mindset
-- Detection & response
+## Hands-On Experience
+- Investigated real-world phishing samples
+- Analyzed spoofed domains and fake sender addresses
+- Extracted URLs and hashes from malicious emails
+- Reported findings using standard SOC formats

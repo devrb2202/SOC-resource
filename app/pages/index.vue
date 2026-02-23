@@ -1,26 +1,181 @@
-<template>
-  <!-- <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout> -->
-      <p class="text-muted text-2xl text-center">
-      Hi, I’m Ramil Bercasio, a Computer engineer with a strong interest in SOC and Blue Team operations. I focus on building hands-on security labs to practice log analysis, threat detection, and incident response using SIEM tools such as Wazuh.
-
-This website showcases my cybersecurity projects, including detection use cases and incident investigations, all conducted in authorized and ethical lab environments.
-    </p>
-
-    <div class="flex flex-row justify-center p-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5 space-x-5">
-           <UBlogPost
-              title="Introducing Nuxt Icon v1"
-              description="Discover Nuxt Icon v1 - a modern, versatile, and customizable icon solution for your Nuxt projects."
-              image="https://nuxt.com/assets/blog/nuxt-icon/cover.png"
-              date="2024-11-25"
-              class="w-100 h-100 line-clamp-3"
-              v-for="x in 3"
-            />
+<!-- <template>
+  <UApp>
+    <div class="flex flex-row justify-center items-center fixed px-6 py-6 w-full z-50 bg-green-800">
+      <div class="flex justify-end w-7xl px-2 md:px-6">
+          <UButton
+            color="primary"
+            variant="outline"
+            to="https://github.com/nuxt/ui"
+            target="_blank"
+            icon="i-simple-icons-github"
+            aria-label="GitHub"
+            label="Open Source"
+            :trailing="true"
+            size="xl"
+          />
       </div>
-
-
     </div>
-   
+    <UMain class="pt-24">
+       <UContainer>
+       <div class="my-8">
+         <p class="">
+        Ramil Bercasio
+      </p>
+      <p class="text-muted">
+  SOC Analyst Trainee
+      </p>
+    </div>
+    
+    <div class="my-8">
+    <p>SOC Training Portfolio</p>
+     <p class="text-muted text-justify">
+      I built this portfolio to document my hands-on journey toward becoming a Security Operations Center (SOC) Analyst. Each module card below represents a specific area of SOC training that I personally studied, practiced, and applied through labs, simulations, and real-world–style scenarios.
+
+Rather than focusing only on theory, my training emphasizes how SOC analysts actually work—from detecting suspicious activity, analyzing logs, investigating alerts, to making informed response decisions.
+
+This portfolio demonstrates my ability to think like a defender, understand attacker behavior, and apply structured analysis using industry-standard frameworks and tools.
+    </p>
+    </div>
+       <UBlogPosts :posts="posts" />
+  </UContainer>
+    </UMain>
+  </UApp>
+
 </template>
+
+<script setup lang="ts">
+
+const posts = ref([
+  {
+    title: 'Email & Phishing Analysis',
+    description: 'Start your defensive security career...',
+    image: 'https://nuxt.com/assets/blog/nuxt-icon/cover.png',
+    date: '2024-11-25',
+    to: '/courses/blue-team-introduction'
+  },
+  {
+    title: 'Network Traffic Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Network Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Web Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Windows & Linux Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Malware Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+   {
+    title: 'Threat Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  }
+])
+
+</script> -->
+
+<template>
+    <UContainer>
+       <div class="my-8">
+         <p class="">
+        Ramil Bercasio
+      </p>
+      <p class="text-muted">
+  SOC Analyst Trainee
+      </p>
+    </div>
+    
+    <div class="my-8">
+    <p>SOC Training Portfolio</p>
+     <p class="text-muted text-justify">
+      I built this portfolio to document my hands-on journey toward becoming a Security Operations Center (SOC) Analyst. Each module card below represents a specific area of SOC training that I personally studied, practiced, and applied through labs, simulations, and real-world–style scenarios.
+
+Rather than focusing only on theory, my training emphasizes how SOC analysts actually work—from detecting suspicious activity, analyzing logs, investigating alerts, to making informed response decisions.
+
+This portfolio demonstrates my ability to think like a defender, understand attacker behavior, and apply structured analysis using industry-standard frameworks and tools.
+    </p>
+    </div>
+       <UBlogPosts :posts="posts" />
+  </UContainer>
+
+</template>
+<script setup lang="ts">
+
+const posts = ref([
+  {
+    title: 'Email & Phishing Analysis',
+    description: 'Start your defensive security career...',
+    image: 'https://nuxt.com/assets/blog/nuxt-icon/cover.png',
+    date: '2024-11-25',
+    to: '/courses/blue-team-introduction'
+  },
+  {
+    title: 'Network Traffic Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Network Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Web Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Windows & Linux Security Monitoring',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+  {
+    title: 'Malware Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  },
+   {
+    title: 'Threat Analysis',
+    description: 'Explore the essential SOC analyst skills...',
+    image: 'https://nuxt.com/assets/blog/v3.14.png',
+    date: '2024-11-04',
+    to: '/courses/soc-team-internals'
+  }
+])
+
+</script>
